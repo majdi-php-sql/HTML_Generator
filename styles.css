@@ -1,0 +1,128 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto 0; /* Center horizontally and position from top */
+}
+
+h1 {
+    text-align: center;
+    color: #2b5797;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #2b5797;
+}
+
+input, select, button, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding does not add to width */
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+}
+
+button {
+    background-color: #0078d7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+#fieldsContainer > div {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Specific Options Styles */
+#formOptions,
+#imageOptions,
+#linkOptions,
+#tableOptions,
+#listOptions,
+#iframeOptions {
+    display: none;
+}
+
+/* Metro Design Colors */
+input[type="text"], input[type="number"], select, textarea {
+    border: 1px solid #0078d7;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+    border-color: #005a9e;
+    background-color: #e5f1fb;
+    outline: none;
+}
+
+button {
+    background-color: #0078d7;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+input[type="file"] {
+    padding: 3px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #2b5797;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 10px auto 0; /* Center horizontally and position from top */
+    }
+}
